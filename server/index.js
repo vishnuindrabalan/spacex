@@ -5,6 +5,7 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import { ServerStyleSheets, ThemeProvider } from "@material-ui/core/styles";
 import App from "../src/App";
 import theme from "../src/theme";
+import { StaticRouter } from "react-router-dom";
 
 function renderFullPage(html, css) {
   return `
@@ -28,12 +29,15 @@ function handleRender(req, res) {
   const sheets = new ServerStyleSheets();
 
   // Render the component to a string.
+  const context = {};
   const html = ReactDOMServer.renderToString(
     sheets.collect(
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
-        <App />
+        <StaticRouter location={req.url} context={context}>
+          <App />
+        </StaticRouter>
       </ThemeProvider>
     )
   );

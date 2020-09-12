@@ -116,7 +116,7 @@ export default function Home() {
                           {program} title
                         </Typography>
                         <Typography variant="body2" gutterBottom>
-                          Checking sample content lorem
+                          Checking sample content lorem ipsum
                         </Typography>
                       </div>
                     </Paper>

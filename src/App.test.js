@@ -4,6 +4,6 @@ import App from "./App";
 
 test("renders Spacex", () => {
   const { getByText } = render(<App />);
-  const linkElement = getByText(/Spacex project first build test/i);
+  const linkElement = getByText(/SpaceX Launch Programs/i);
   expect(linkElement).toBeInTheDocument();
 });

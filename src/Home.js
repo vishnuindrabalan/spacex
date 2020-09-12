@@ -114,7 +114,7 @@ export default function Home() {
                 className={classes.grid}
               >
                 {programs.map((program) => (
-                  <Grid item xs={12} md={4}>
+                  <Grid item xs={12} md={4} key={program}>
                     <Paper className={classes.paper}>
                       <div className={classes.box}>
                         <Typography

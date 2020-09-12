@@ -1,11 +1,8 @@
-import React, { Component, useState } from "react";
+import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { withRouter } from "react-router-dom";
-import CssBaseline from "@material-ui/core/CssBaseline";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
-import Button from "@material-ui/core/Button";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -90,13 +87,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Home() {
   const classes = useStyles();
-  const [programs, setPrograms] = useState([
-    "first",
-    "second",
-    "third",
-    "fourth",
-    "fifth",
-  ]);
+  const programs = ["first", "second", "third", "fourth", "fifth"];
   return (
     <React.Fragment>
       <div className={classes.root}>
@@ -125,7 +116,7 @@ export default function Home() {
                           {program} title
                         </Typography>
                         <Typography variant="body2" gutterBottom>
-                          Checking sample content
+                          Checking sample content lorem
                         </Typography>
                       </div>
                     </Paper>

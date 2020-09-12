@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - "12"
+script:
+  - npm test
+  - npm run build
+deploy:
+  provider: heroku
+  app: spacex-spaient
+  api_key:
+    secure: QN/xneVsW318fNk+WXeotOe0uN/xjkwnYpgiwAzvwcPUbLQ5KQlWxSsrIOoRZBvUZltF/HVky1E30HlfhHGUDlmq+Sa7ydeLcI6C7xou7DujKSWE1QzfdpcJkuKxB6Bc3Uf/gLcnFs6K78rKR6nvbvEZB8iirU4j7llwBenbro1Cxg8Xs7I0xxQHLQ1ZNJx1E3dFd4BhfAmW/Pk930lvfz9iMbgM2YmSiERRIEIkgXCIAESmHn6m3OuiCbXW+UKezUB3g/xMOjucvGT07/mlOCrjZrpYONHQDTQjAzseeKoVl89eYTYzq6aMDlgVy/gibTGasd3GUzxOt5zZ6izQK9rXyd0Ik9tZdUcuJMGFCcE/0ahMlkSA5eBTMSC6vbRvwWwczI5uPam0gOScqPRqL5LE+vwj32Nqlh74Ah9rkCPYZh2WVzPzYhxsTb3pW1sGm/pOpqyqKc6OYSjaUCXTvKcqO6gzhNIsa4JmDgsD7NwTg//FZ9lEKSxDALB9vMxiNQOkX/DOJ6Zol2HZ67ICYfwUSYWuooLmD/0Abthzroln64v8O/H+cNuwZ5WHuTfEsurSVp2EAb/7n2i+/71NBf5cI1rBZNzVUsDyrfV/Sq0xiWvzNIF/dc/l1V1Bw272FzaC+K/22TKeW6NHf/u9D0LGEUtRs+ZFNX1fLOBeabM=

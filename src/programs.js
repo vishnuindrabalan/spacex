@@ -105,7 +105,7 @@ export default function Programs({ data }) {
         <div>SpaceX Launch Programs</div>
         <Grid container style={{ margin: 20 }}>
           <Grid item xs={12} md={2}>
-            <div>Sidemenu comes here</div>
+            <div>Sidemenu comes</div>
           </Grid>
           <Grid item xs={12} md={10}>
             <Grid container>

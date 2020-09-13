@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
@@ -87,7 +87,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Programs({ data }) {
   const classes = useStyles();
-  const programs = ["first", "second", "third", "fourth", "fifth"];
+  //   const programs = ["first", "second", "third", "fourth", "fifth"];
   //   useEffect(() => {
   //     console.log(
   //       "This only happens ONCE.  But it happens AFTER the initial render."
